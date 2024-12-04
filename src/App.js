@@ -1,10 +1,11 @@
 import React from "react";
+import HeaderTitle from "./components/HeaderTitle";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Sup</h1>
+      <HeaderTitle />
     </div>
   );
 }
