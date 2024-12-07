@@ -9,7 +9,13 @@ const HeaderTitle = () => {
         <span className="sky">SKY</span>
         <span className="budget">BUDGET</span>
         <img src={logo} alt="SkyBudget" class="overlay-image" />
+        <div className="description">
+          Your Personalized Flight Fare Calculator
+        </div>
       </div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   );
 };

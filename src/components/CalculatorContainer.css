@@ -7,27 +7,34 @@
   flex-shrink: 0;
   flex-wrap: wrap;
   border-radius: 20px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(198, 219, 235, 0.5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.output-box{
-  width: 1077px;
-  height: 158px;
+.output-box {
+  width: 67.3125rem;
+  height: 9.875rem;
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   border-radius: 40px;
-  background: linear-gradient(90deg, rgba(68, 155, 178, 0.00) 0%, rgba(45, 209, 255, 0.45) 0.01%, rgba(255, 255, 255, 0.36) 61.5%, rgba(98, 179, 236, 0.45) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(68, 155, 178, 0) 0%,
+    rgba(45, 209, 255, 0.45) 0.01%,
+    rgba(255, 255, 255, 0.36) 61.5%,
+    rgba(98, 179, 236, 0.45) 100%
+  );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.output{
+.output {
   display: flex;
-  width: 638px;
+  width: 25rem;
   height: 51px;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   flex-shrink: 0;
   color: #000;
@@ -39,14 +46,15 @@
   line-height: normal;
 }
 
-.airplane{
+.airplane {
   width: 133px;
   height: 133px;
+  display: flex;
   flex-shrink: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.defaultbox{
+.defaultbox {
   width: 331px;
   height: 76px;
   flex-shrink: 0;
@@ -54,14 +62,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.8);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.cebu{
+.cebu {
   display: flex;
   width: 250px;
-  height: 20px;
+  height: 30px;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
@@ -74,7 +82,7 @@
   line-height: normal;
 }
 
-.input-box{
+.input-box {
   width: 331px;
   height: 76px;
   flex-shrink: 0;
@@ -82,17 +90,17 @@
   justify-content: flex-end;
   align-items: center;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.8);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.circledown{
+.circledown {
   width: 32px;
   height: 32px;
   flex-shrink: 0;
 }
 
-.right-button{
+.right-button {
   margin-right: 5px;
   border: 1px solid rgba(255, 0, 0, 0);
 }
