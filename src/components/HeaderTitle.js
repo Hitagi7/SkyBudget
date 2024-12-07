@@ -8,7 +8,7 @@ const HeaderTitle = () => {
       <div className="title-logo">
         <span className="sky">SKY</span>
         <span className="budget">BUDGET</span>
-        <img src={logo} alt="SkyBudget" class="overlay-image" />
+        <img src={logo} alt="SkyBudget" className="overlay-image" />
         <div className="description">
           Your Personalized Flight Fare Calculator
         </div>
