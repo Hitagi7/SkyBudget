@@ -87,6 +87,13 @@
   line-height: normal;
 }
 
+.input-with-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 331px;
+}
+
 .input-box {
   width: 331px;
   height: 76px;
@@ -97,6 +104,7 @@
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
 }
 
 .circledown {
@@ -106,7 +114,11 @@
 }
 
 .right-button {
+  position: absolute;
+  right: 1px;
   margin-right: 5px;
   border: 1px solid rgba(255, 0, 0, 0);
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
+

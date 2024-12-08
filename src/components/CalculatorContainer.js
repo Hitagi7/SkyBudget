@@ -4,6 +4,7 @@ import plane from "../assets/Airplane.svg";
 import group_of_arrows from "../assets/group_of_arrows.svg";
 import circledown from "../assets/CaretCircleDown.svg";
 
+
 const CalculatorContainer = () => {
   return (
     <div className="outside-rectangle">
@@ -17,9 +18,15 @@ const CalculatorContainer = () => {
         <span className="cebu">Cebu</span>
       </div>
       <img src={group_of_arrows} alt="" />
-      <input className="input-box" />
+      <div className="input-with-button">
+       <input className="input-box" /> 
+       <div className="right-button">
+        <img src= {circledown} alt = "circledown" className="circledown"/>
+       </div>
+      </div>
     </div>
   );
 };
+
 
 export default CalculatorContainer;
