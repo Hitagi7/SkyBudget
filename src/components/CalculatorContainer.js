@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CalculatorContainer.css";
+import DropdownMenu from "../components/DropdownMenu";
 import plane from "../assets/Airplane.svg";
 import group_of_arrows from "../assets/group_of_arrows.svg";
 import circledown from "../assets/CaretCircleDown.svg";
 
-
 const CalculatorContainer = () => {
+  const [dropdown, setDropdown] = useState(false);
+
+  const toggleDropdown = () => setDropdown(!dropdown);
+
   return (
     <div className="outside-rectangle">
       <div className="output-box">
@@ -19,14 +23,16 @@ const CalculatorContainer = () => {
       </div>
       <img src={group_of_arrows} alt="" />
       <div className="input-with-button">
-       <input className="input-box" /> 
-       <div className="right-button">
-        <img src= {circledown} alt = "circledown" className="circledown"/>
-       </div>
+        <input className="input-box" />
+        <div className="right-button" onClick={toggleDropdown}>
+          <img src={circledown} alt="circledown" className="circledown" />
+        </div>
       </div>
+
+      {/* Render the DropdownMenu when dropdown state is true */}
+      {dropdown && <DropdownMenu />}
     </div>
   );
 };
-
 
 export default CalculatorContainer;

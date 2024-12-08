@@ -89,7 +89,7 @@
 
 .input-with-button {
   position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   width: 331px;
 }
