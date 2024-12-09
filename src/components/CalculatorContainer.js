@@ -7,6 +7,9 @@ import circledown from "../assets/CaretCircleDown.svg";
 
 const CalculatorContainer = () => {
   const [dropdown, setDropdown] = useState(false);
+  const [provinceTitle, setProvinceTitle] = useState("");
+
+  const updateProvince = (province) => setProvinceTitle(province);
 
   const toggleDropdown = () => setDropdown(!dropdown);
 
@@ -23,11 +26,11 @@ const CalculatorContainer = () => {
       </div>
       <img src={group_of_arrows} alt="" />
       <div className="input-with-button">
-        <input className="input-box" />
+        <input className="input-box" value={provinceTitle} readOnly />
         <div className="right-button" onClick={toggleDropdown}>
           <img src={circledown} alt="circledown" className="circledown" />
         </div>
-        {dropdown && <DropdownMenu />}
+        {dropdown && <DropdownMenu setProvinceTitle={updateProvince} />}
       </div>
     </div>
   );
