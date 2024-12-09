@@ -14,6 +14,7 @@
   overflow-y: auto;
   box-sizing: border-box;
   padding: 10px 0;
+  clip-path: inset(0 round 20px);
 }
 
 .dropdown-menu::-webkit-scrollbar {
@@ -36,7 +37,7 @@
 .dropdown-menu li {
   display: flex;
   width: 250px;
-  height: 20px;
+  height: 60px;
   align-items: center;
   justify-content: center;
   text-align: center;
