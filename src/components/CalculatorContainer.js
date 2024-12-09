@@ -27,10 +27,8 @@ const CalculatorContainer = () => {
         <div className="right-button" onClick={toggleDropdown}>
           <img src={circledown} alt="circledown" className="circledown" />
         </div>
+        {dropdown && <DropdownMenu />}
       </div>
-
-      {/* Render the DropdownMenu when dropdown state is true */}
-      {dropdown && <DropdownMenu />}
     </div>
   );
 };
