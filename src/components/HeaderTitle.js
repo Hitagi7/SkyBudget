@@ -1,21 +1,11 @@
 import React from "react";
 import "./HeaderTitle.css";
-import logo from "../assets/SKYBUDGET.png";
+import titleLogo from "../assets/skybudgetTitle.svg";
 
 const HeaderTitle = () => {
   return (
     <div className="header-container">
-      <div className="title-logo">
-        <span className="sky">SKY</span>
-        <span className="budget">BUDGET</span>
-        <img src={logo} alt="SkyBudget" className="overlay-image" />
-        <div className="description">
-          Your Personalized Flight Fare Calculator
-        </div>
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <img src={titleLogo} alt="SkyBudget" />
     </div>
   );
 };
