@@ -45,14 +45,13 @@ const CalculatorContainer = () => {
     const DataDistance = [];
     const DataPrice = [];
 
-    console.log(`rangeIndex:${rangeIndex}`);
     if (-1 < rangeIndex && rangeIndex < 2) {
       for (let i = 0; i < rangeIndex + 3; i++) {
         DataDistance.push(DataPoints[i].datadistance);
         DataPrice.push(DataPoints[i].dataprice);
       }
     } else if (rangeIndex === -1) {
-      for (let i = DataPoints.length - 2; i < DataPoints.length; i++) {
+      for (let i = DataPoints.length - 4; i < DataPoints.length; i++) {
         DataDistance.push(DataPoints[i].datadistance);
         DataPrice.push(DataPoints[i].dataprice);
       }
