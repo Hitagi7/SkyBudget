@@ -4,6 +4,7 @@ import DropdownMenu from "../components/DropdownMenu";
 import plane from "../assets/Airplane.svg";
 import group_of_arrows from "../assets/group_of_arrows.svg";
 import circledown from "../assets/CaretCircleDown.svg";
+import circleup from "../assets/CaretCircleUp.svg";
 import { DataPoints } from "./MenuItems";
 
 const CalculatorContainer = () => {
@@ -14,6 +15,7 @@ const CalculatorContainer = () => {
   const [dividedOutput, setDividedOutput] = useState(0.0);
 
   const updateInput = (field, value) => {
+    toggleDropdown();
     switch (field) {
       case "provinceTitle":
         setProvinceTitle(value);
@@ -43,13 +45,14 @@ const CalculatorContainer = () => {
     const DataDistance = [];
     const DataPrice = [];
 
-    if (rangeIndex < 2) {
+    console.log(`rangeIndex:${rangeIndex}`);
+    if (-1 < rangeIndex && rangeIndex < 2) {
       for (let i = 0; i < rangeIndex + 3; i++) {
         DataDistance.push(DataPoints[i].datadistance);
         DataPrice.push(DataPoints[i].dataprice);
       }
-    } else if (rangeIndex === DataPoints.length) {
-      for (let i = 7; i < 11; i++) {
+    } else if (rangeIndex === -1) {
+      for (let i = DataPoints.length - 2; i < DataPoints.length; i++) {
         DataDistance.push(DataPoints[i].datadistance);
         DataPrice.push(DataPoints[i].dataprice);
       }
@@ -91,7 +94,11 @@ const CalculatorContainer = () => {
       <div className="input-with-button">
         <input className="input-box" value={provinceTitle} readOnly />
         <div className="right-button" onClick={toggleDropdown}>
-          <img src={circledown} alt="circledown" className="circledown" />
+          <img
+            src={dropdown ? circledown : circleup}
+            alt={dropdown ? circledown : circleup}
+            className="circle"
+          />
         </div>
         {dropdown && <DropdownMenu updateInput={updateInput} />}
       </div>
