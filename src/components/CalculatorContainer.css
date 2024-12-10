@@ -41,6 +41,12 @@
   font-weight: 500;
 }
 
+.output-title {
+  display: flex;
+  align-items: center;
+  height: 3.1875rem;
+}
+
 .output {
   display: flex;
   width: 25rem;
