@@ -7,13 +7,13 @@ export const MenuItems = [
   { title: "Roxas City", distance: 196 },
   { title: "Kalibo", distance: 232 },
   { title: "Caticlan", distance: 284 },
+  { title: "Cotabato", distance: 348 },
   { title: "Davao", distance: 397 },
   { title: "Zamboanga", distance: 430 },
   { title: "General Santos", distance: 486 },
   { title: "Manila", distance: 565 },
   { title: "Puerto Princesa", distance: 576 },
   { title: "Angeles City", distance: 655 },
-  { title: "Tuguegarao", distance: 847 },
 ];
 
 export const DataPoints = [
