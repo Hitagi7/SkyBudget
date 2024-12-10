@@ -18,7 +18,7 @@
   flex-flow: wrap;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 14px;
   border-radius: 40px;
   background: linear-gradient(
     90deg,
@@ -30,6 +30,17 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.lagrange-method,
+.divided-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  font-family: "Lucida Sans";
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .output {
   display: flex;
   width: 25rem;
@@ -37,18 +48,12 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  color: #000;
   text-align: center;
   font-family: Arial;
   font-size: 64px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-
-.plane-wrapper {
-  position: relative;
-  right: 80px;
 }
 
 .airplane {
@@ -85,6 +90,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  cursor: default;
 }
 
 .input-with-button {
@@ -108,6 +114,7 @@
   position: relative;
   outline: 0;
   border: none;
+  cursor: default;
 }
 
 .input-box:focus {

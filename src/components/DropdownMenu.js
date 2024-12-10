@@ -2,14 +2,15 @@ import React from "react";
 import { MenuItems } from "../components/MenuItems";
 import "./DropdownMenu.css";
 
-function DropdownMenu({ setProvinceTitle }) {
+function DropdownMenu({ updateInput }) {
   return (
     <ul className="dropdown-menu">
       {MenuItems.map((item, index) => (
         <li
           key={index}
-          onClick={(e) => {
-            setProvinceTitle(item.title);
+          onClick={() => {
+            updateInput("provinceTitle", item.title);
+            updateInput("provinceDistance", item.distance);
           }}
         >
           {item.title}
